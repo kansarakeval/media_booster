@@ -38,8 +38,8 @@ class _VideoPlayScreenState extends State<VideoPlayScreen> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            "VideoPlay",
-            style: TextStyle(fontSize: 25, color: white),
+            "Video Play",
+            style: TextStyle(fontSize: 25, color: yellow),
           ),
           centerTitle: true,
           backgroundColor: black,
