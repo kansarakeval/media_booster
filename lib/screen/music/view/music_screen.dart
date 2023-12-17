@@ -27,48 +27,55 @@ class _MusicScreenState extends State<MusicScreen> {
             mainAxisSpacing: 8.0,
           ),
           itemBuilder: (context, index) {
-            return Container(
-              margin: EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                color: white,
-                border: Border.all(color: yellow),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Stack(
-                alignment: Alignment.bottomLeft,
-                children: [
-                  ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        "${providerw!.musicList[index].image}",
-                        fit: BoxFit.cover,
-                        height: double.infinity,
-                        width: double.infinity,
-                      ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "${providerw!.musicList[index].title}",
-                          style: TextStyle(color: Colors.white,fontSize: 20),
+            return InkWell(
+              onTap: () {
+                providerr!.changIndex(index);
+                Navigator.pushNamed(context, 'musicPlay');
+              },
+              child: Container(
+                margin: EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                  color: white,
+                  border: Border.all(color: yellow),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Stack(
+                  alignment: Alignment.bottomLeft,
+                  children: [
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: Image.asset(
+                          "${providerw!.musicList[index].image}",
+                          fit: BoxFit.cover,
+                          height: double.infinity,
+                          width: double.infinity,
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              "4.5",
-                              style: TextStyle(color: Colors.white,),
-                            ),
-                            Icon(Icons.star,color: white,size: 15,),
-                          ],
-                        ),
-                      ],
                     ),
-                  )
-                ],
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "${providerw!.musicList[index].title}",
+                            style: TextStyle(color: Colors.white,fontSize: 20),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "4.5",
+                                style: TextStyle(color: Colors.white,),
+                              ),
+                              SizedBox(width: 5,),
+                              Icon(Icons.star,color: white,size: 15,),
+                            ],
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             );
           },
