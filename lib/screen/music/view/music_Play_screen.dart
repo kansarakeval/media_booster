@@ -179,9 +179,9 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                                   ],
                                 ),
                               ),
-                              // SizedBox(
-                              //   height: 50,
-                              // )
+                              SizedBox(
+                                height: 50,
+                              )
                             ],
                           );
                         },
