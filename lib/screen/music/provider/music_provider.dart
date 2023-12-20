@@ -20,6 +20,13 @@ class MusicProvider with ChangeNotifier
   bool isPlay = false;
   Duration totalDuration =  Duration(seconds: 0);
   int index = 0;
+  int sliderIndex = 0;
+
+  void changeIndexofSlider(int i)
+  {
+    sliderIndex = i;
+    notifyListeners();
+  }
 
   void changIndex(int i)
   {

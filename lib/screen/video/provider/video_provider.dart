@@ -37,6 +37,13 @@ class VideoProvider with ChangeNotifier {
         video: "assets/video/video8.mp4"),
   ];
   int index = 0;
+  int sliderIndex = 0;
+
+  void changeIndexofSlider(int i)
+  {
+    sliderIndex = i;
+    notifyListeners();
+  }
 
   void changIndex(int i) {
     index = i;
