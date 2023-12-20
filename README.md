@@ -18,6 +18,5 @@ samples, guidance on mobile development, and a full API reference.
   <img src="https://github.com/kansarakeval/media_booster/assets/119046853/0ba8b5b5-e9e4-47f1-8166-4b46ba2d7c4d" hight="500" width="150">
   <img src="https://github.com/kansarakeval/media_booster/assets/119046853/5acf26b5-2c08-4c18-82ea-1be454c56895" hight="500" width="150">
   <img src="https://github.com/kansarakeval/media_booster/assets/119046853/756a48b5-1848-489c-ab35-c5dae096a0c3" hight="500" width="150">
-  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/b7b3b43c-615d-4693-aa56-04914248df87" hight="500" width="150">
   <img src="https://github.com/kansarakeval/media_booster/assets/119046853/b7273199-8a93-4ada-a515-af6efed23f5f" hight="500" width="150">
 </p>
