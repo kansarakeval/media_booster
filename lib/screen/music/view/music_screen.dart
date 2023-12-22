@@ -59,8 +59,8 @@ class _MusicScreenState extends State<MusicScreen> {
                             "${providerw!.musicList[index].title}",
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold),
+                                fontSize: 20,
+                                ),
                           ),
                         ),
                       ],
@@ -79,7 +79,7 @@ class _MusicScreenState extends State<MusicScreen> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
               width: MediaQuery.sizeOf(context).width,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -91,8 +91,8 @@ class _MusicScreenState extends State<MusicScreen> {
                 itemCount: providerw!.musicList.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  crossAxisSpacing: 8.0,
-                  mainAxisSpacing: 8.0,
+                  crossAxisSpacing: 15,
+                  mainAxisSpacing: 15,
                 ),
                 itemBuilder: (context, index) {
                   return InkWell(
@@ -101,10 +101,9 @@ class _MusicScreenState extends State<MusicScreen> {
                       Navigator.pushNamed(context, 'musicPlay');
                     },
                     child: Container(
-                      margin: EdgeInsets.all(5),
+                      margin: EdgeInsets.all(2),
                       decoration: BoxDecoration(
                         color: white,
-                        border: Border.all(color: yellow),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Stack(
@@ -128,7 +127,7 @@ class _MusicScreenState extends State<MusicScreen> {
                                 Text(
                                   "${providerw!.musicList[index].title}",
                                   style: TextStyle(
-                                      color: Colors.white, fontSize: 20),
+                                      color: Colors.white, fontSize: 18),
                                 ),
                                 Row(
                                   children: [
@@ -160,7 +159,7 @@ class _MusicScreenState extends State<MusicScreen> {
             ),
           ],
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: black,
       ),
     );
   }
@@ -170,7 +169,7 @@ class _MusicScreenState extends State<MusicScreen> {
       margin: EdgeInsets.symmetric(horizontal: 3),
       height: 10,
       width: 10,
-      decoration: BoxDecoration(shape: BoxShape.circle,color: index==providerw!.sliderIndex?yellow:white),
+      decoration: BoxDecoration(shape: BoxShape.circle,color: index==providerw!.sliderIndex?blue900:white),
     );
   }
 }

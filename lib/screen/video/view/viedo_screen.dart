@@ -59,8 +59,8 @@ class _VideoScreenState extends State<VideoScreen> {
                             "${providew!.videoList[index].title}",
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold),
+                                fontSize: 20,
+                                ),
                           ),
                         ),
                       ],
@@ -79,7 +79,7 @@ class _VideoScreenState extends State<VideoScreen> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
               width: MediaQuery.sizeOf(context).width,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -91,8 +91,8 @@ class _VideoScreenState extends State<VideoScreen> {
                 itemCount: providew!.videoList.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  crossAxisSpacing: 8.0,
-                  mainAxisSpacing: 8.0,
+                  crossAxisSpacing: 15,
+                  mainAxisSpacing: 15,
                 ),
                 itemBuilder: (context, index) {
                   return InkWell(
@@ -104,7 +104,6 @@ class _VideoScreenState extends State<VideoScreen> {
                       margin: EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: white,
-                        border: Border.all(color: yellow),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Stack(
@@ -127,7 +126,7 @@ class _VideoScreenState extends State<VideoScreen> {
                               children: [
                                 Text(
                                   "${providew!.videoList[index].title}",
-                                  style: TextStyle(color: Colors.white,fontSize: 20),
+                                  style: TextStyle(color: Colors.white,fontSize: 18),
                                 ),
                                 Row(
                                   children: [
@@ -151,7 +150,7 @@ class _VideoScreenState extends State<VideoScreen> {
             ),
           ],
         ),
-          backgroundColor: Colors.black,
+          backgroundColor: black,
       ),
     );
   }
@@ -161,7 +160,7 @@ class _VideoScreenState extends State<VideoScreen> {
       margin: EdgeInsets.symmetric(horizontal: 3),
       height: 10,
       width: 10,
-      decoration: BoxDecoration(shape: BoxShape.circle,color: index==providew!.sliderIndex?yellow:white),
+      decoration: BoxDecoration(shape: BoxShape.circle,color: index==providew!.sliderIndex?blue900:white),
     );
   }
 }

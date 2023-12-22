@@ -52,8 +52,9 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
         appBar: AppBar(
           title: Text(
             "Play Music",
-            style: TextStyle(fontSize: 25, color: yellow),
+            style: TextStyle(fontSize: 25, color: blue900),
           ),
+          iconTheme: IconThemeData(color: blue900),
           centerTitle: true,
           backgroundColor: black,
         ),
@@ -67,12 +68,17 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
               width: double.infinity,
               fit: BoxFit.cover,
             ),
-            BackdropFilter(
-              filter: ui.ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
-              child: Container(
-                color: Colors.transparent,
-              ),
+            Container(
+              height: double.infinity,
+              width: double.infinity,
+              color: Colors.black54,
             ),
+            // BackdropFilter(
+            //   filter: ui.ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
+            //   child: Container(
+            //     color: Colors.transparent,
+            //   ),
+            // ),
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -100,7 +106,7 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                               loadSong();
                             },
                             icon: Icon(
-                              Icons.navigate_before_rounded,
+                              Icons.skip_previous,
                               color: white,
                               size: 50,
                             ),
@@ -138,7 +144,7 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                               loadSong();
                             },
                             icon: Icon(
-                              Icons.navigate_next,
+                              Icons.skip_next,
                               color: white,
                               size: 50,
                             ),
@@ -155,7 +161,7 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                                 min: 0,
                                 value: position.inSeconds.toDouble(),
                                 max: providerr!.totalDuration.inSeconds.toDouble(),
-                                activeColor: yellow,
+                                activeColor: blue900,
                                 onChanged: (value) {
                                   context.read<MusicProvider>().player.seek(Duration(
                                     seconds: value.toInt(),
@@ -179,13 +185,30 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
-                                height: 50,
-                              )
+                              SizedBox(height: 20,),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.queue_music,color: white,),
+                                    Spacer(),
+                                    Icon(Icons.favorite_border,color: white,),
+                                    Spacer(),
+                                    Icon(Icons.share,color: white,),
+                                    Spacer(),
+                                    Icon(Icons.link_outlined,color: white,),
+                                    Spacer(),
+                                    Icon(Icons.playlist_add,color: white,),
+                                  ],
+                                ),
+                              ),
+
                             ],
                           );
                         },
-                      )
+                      ),
+
                     ],
                   ),
                 ],

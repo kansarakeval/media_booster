@@ -39,8 +39,9 @@ class _VideoPlayScreenState extends State<VideoPlayScreen> {
         appBar: AppBar(
           title: Text(
             "Video Play",
-            style: TextStyle(fontSize: 25, color: yellow),
+            style: TextStyle(fontSize: 25, color: blue900),
           ),
+          iconTheme: IconThemeData(color: blue900),
           centerTitle: true,
           backgroundColor: black,
         ),

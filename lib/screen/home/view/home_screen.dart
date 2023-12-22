@@ -20,21 +20,21 @@ class _HomeScreenState extends State<HomeScreen> {
           appBar: AppBar(
             title: Text(
               "Media Booster",
-              style: TextStyle(fontSize: 25, color: yellow),
+              style: TextStyle(fontSize: 25, color: blue900),
             ),
             centerTitle: true,
             backgroundColor: black,
             bottom:  TabBar(
-              labelColor: yellow,
-              unselectedLabelColor: yellow,
-              indicatorColor: yellow,
+              labelColor: blue900,
+              unselectedLabelColor: blue900,
+              indicatorColor: blue900,
               tabs: [
                 Tab(
-                  icon: Icon(Icons.music_note,color: yellow),
+                  icon: Icon(Icons.music_note,color: blue900),
                   text: "music",
                 ),
                 Tab(
-                  icon: Icon(Icons.music_video_rounded,color: yellow),
+                  icon: Icon(Icons.music_video_rounded,color: blue900),
                   text: "video",
                 )
               ],
