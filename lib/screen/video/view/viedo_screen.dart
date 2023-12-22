@@ -99,6 +99,7 @@ class _VideoScreenState extends State<VideoScreen> {
                     onTap: () {
                       provider!.changIndex(index);
                       Navigator.pushNamed(context, 'videoPlay');
+
                     },
                     child: Container(
                       margin: EdgeInsets.all(5),
