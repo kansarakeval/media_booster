@@ -85,12 +85,12 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                 children: [
                   Text(
                     "${providerw!.musicList[providerw!.index].title}",
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Column(
@@ -111,7 +111,7 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                               size: 50,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           IconButton(
@@ -132,7 +132,7 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                               size: 50,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           IconButton(
@@ -177,7 +177,7 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                                       "${position.toString().split(".")[0]}",
                                       style: TextStyle(color: white),
                                     ),
-                                    Spacer(),
+                                    const Spacer(),
                                     Text(
                                       "${providerw!.totalDuration.toString().split(".")[0]}",
                                       style: TextStyle(color: white),
@@ -185,20 +185,20 @@ class _MusicPlayScreenState extends State<MusicPlayScreen> {
                                   ],
                                 ),
                               ),
-                              SizedBox(height: 20,),
+                              const SizedBox(height: 20,),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.queue_music,color: white,),
-                                    Spacer(),
+                                    const Spacer(),
                                     Icon(Icons.favorite_border,color: white,),
-                                    Spacer(),
+                                    const Spacer(),
                                     Icon(Icons.share,color: white,),
-                                    Spacer(),
+                                    const Spacer(),
                                     Icon(Icons.link_outlined,color: white,),
-                                    Spacer(),
+                                    const Spacer(),
                                     Icon(Icons.playlist_add,color: white,),
                                   ],
                                 ),

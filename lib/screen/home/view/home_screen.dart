@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
               labelColor: blue900,
               unselectedLabelColor: blue900,
               indicatorColor: blue900,
+
               tabs: [
                 Tab(
                   icon: Icon(Icons.music_note,color: blue900),

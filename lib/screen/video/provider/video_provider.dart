@@ -1,5 +1,7 @@
+import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:media_booster/screen/video/modal/video_modal.dart';
+import 'package:video_player/video_player.dart';
 
 class VideoProvider with ChangeNotifier {
   List<VideoModel> videoList = [
@@ -38,6 +40,8 @@ class VideoProvider with ChangeNotifier {
   ];
   int index = 0;
   int sliderIndex = 0;
+  ChewieController? controller;
+  VideoPlayerController? videoPlayerController;
 
   void changeIndexofSlider(int i)
   {

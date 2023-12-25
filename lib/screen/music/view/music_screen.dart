@@ -91,8 +91,8 @@ class _MusicScreenState extends State<MusicScreen> {
                 itemCount: providerw!.musicList.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  crossAxisSpacing: 15,
-                  mainAxisSpacing: 15,
+                  mainAxisExtent: 140,
+
                 ),
                 itemBuilder: (context, index) {
                   return InkWell(
@@ -101,7 +101,7 @@ class _MusicScreenState extends State<MusicScreen> {
                       Navigator.pushNamed(context, 'musicPlay');
                     },
                     child: Container(
-                      margin: EdgeInsets.all(2),
+                      margin: EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: white,
                         borderRadius: BorderRadius.circular(20),
