@@ -16,11 +16,11 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 <p>
   <img src="https://github.com/kansarakeval/media_booster/assets/119046853/e3c3228c-73cf-4e08-ae45-b69991d42d3d" hight="500" width="180">
-  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/1a67b1c2-7346-44ac-95d3-919800da15d2" hight="500" width="150">
-  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/002bf92b-11f4-4750-b90e-efbf37c5ca17" hight="500" width="150">
-  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/5c69a864-e9d8-433b-bdb9-049fc21a3a37" hight="500" width="150">
-  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/cd0181c1-e12a-4095-b1ef-eef44e940082" hight="500" width="150">
-  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/26509354-aa93-4b52-bc1f-cca7ad181cc4" hight="500" width="150">
+  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/1a67b1c2-7346-44ac-95d3-919800da15d2" hight="500" width="180">
+  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/002bf92b-11f4-4750-b90e-efbf37c5ca17" hight="500" width="180">
+  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/5c69a864-e9d8-433b-bdb9-049fc21a3a37" hight="500" width="180">
+  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/cd0181c1-e12a-4095-b1ef-eef44e940082" hight="500" width="180">
+  <img src="https://github.com/kansarakeval/media_booster/assets/119046853/26509354-aa93-4b52-bc1f-cca7ad181cc4" hight="500" width="180">
   
 </p>
 
